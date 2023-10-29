@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halfamaton Ngesu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f150b2b7ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo-Design-Halfa.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hello,i am <span>Halfamaton</span><br> from Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/halimg (1).jpg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Halfamaton Ngesu,a passionate data scientist who is always ready colabarate and work in the technical field. 
+                        I love it when i see data been used to solve problems</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Python</span><br>builing models for prediction purposes and classification </li>
+                            <li><span>Sql</span><br>For quering databases</li>
+                            <li><span>Power bi and Tableau</span><br>creating dashboards to give insights on data</li>
+                            <li><span>Microsoft excel</span><br>For simple data analysis</li>
+                            <li><span>Html, Css and Javascript</span><br>For building websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Data analyst</span><br>2022-to date<br>Freelance data analysis</li>
+                            <li><span>Web development</span><br>2022-to date<br> Freelance and Personal Web development</li>
+                            <li><span>Data Science</span><br>2023<br>Participated in kaggle data science competitions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>Jomo Kenyatta University of Agriculture and Technology<br>Bsc. Mathematics and Computer Science</li>
+                            <li><span>2023</span><br>Kaggle online for data science</li>
+                            <li><span>2022</span><br>eMobilis Technology Institute<br> Web development(Virtual)</li>
+                            <li><span>2015-2018</span><br>Mully Childrens Family Home secondary school</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Science</h2>
+                    <p>I build models and also analyse data to derive insights using Python. i also use Tableau and power bi when need arises</p>
+                    <a href="https://en.wikipedia.org/wiki/Data_science" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Web Design</h2>
+                    <p>i design commercial and proffesional websites that meet the needs of the client. I also offer after design services. I use css,html and javascript</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>IT Consultant</h2>
+                    <p>I help businesses develop, integrate, and maximize the value of IT systems. I offer strategic advice, 
+                        troubleshoot technical issues, and offer expertise in areas such as hardware, software, networks, and project management.</p>
+                    <a href="https://en.wikipedia.org/wiki/Information_technology_consulting" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/house.jpg" alt="image">
+                    <div class="layer">
+                        <h3>House price prediction project</h3>
+                        <p>a house prediction program which utilises the power of python of derive insights and later 
+                            develop a model  to predict the house prices</p>
+                        <a href="https://github.com/halfa1/house-price-prediction" target="_blank">View</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Tableau.jpg" alt="">
+                    <div class="layer">
+                        <h3>Power Bi project</h3>
+                        <p>Power Bi dashboard showing insights and diffrent variables if this dataset relate to each other</p>
+                        <a href="https://github.com/halfa1/powerbi_project" target="_blank">View</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/jupyiter.png" alt="">
+                    <div class="layer">
+                        <h3>Sales Analysis Project</h3>
+                        <p>A Sales analysis project with graphs in python and jupyiter notebooks</p>
+                        <a href="https://github.com/halfa1/sales-analysis" target="_blank">View</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/halfa1/" class="btn" target="_blank">see more</a>
+        </div>
+    </div>
+<!---------contact-------------->
+<div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope-circle-check"></i> ngesuhalfa5@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 0799865942</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/halfa.halfa.731" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/_halfa_halfa" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/halfamaton-ngesu-a04a071b1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/halfa1/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/halfa321/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/ngesu-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2 mm">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-pencil"></i> <i>sir halfa </i></p>
+    </div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
