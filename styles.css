@@ -213,10 +213,12 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
+    color: blue
 }
-.layer h3{
-    font-weight: 500;
+.layer h4{
+    font-weight: 1100;
     margin-bottom: 20px;
+    color: red;
 }
 .layer a{
     margin-top: 20px;
